@@ -9,12 +9,27 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.env
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
 # Mono auto generated files
 mono_crash.*
+
+# .NET MAUI en Xamarin-specifieke bestanden
+platforms/          # Platformspecifieke buildbestanden (Android/iOS/macOS/Windows)
+AppPackages/        # MAUI app packages
+artifacts/          # Build artifacts
+ 
+# Configuratie- en omgeving bestanden
+*.config            # Configuratiebestanden
+*.ini               # Initialisatiebestanden
+*.env               # Gevoelige omgevingsvariabelen
+secrets.json        # Gevoelige configuraties
+ 
+# macOS-specifieke bestanden
+.DS_Store           # macOS systeembestanden
 
 # Build results
 [Dd]ebug/
@@ -32,6 +47,13 @@ bld/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/
+*.dll               # Alle .dll-bestanden (in alle mappen)
+*.exe               # Alle .exe-bestanden (in alle mappen)
+*.log               # Alle .log-bestanden (in alle mappen)
+*.pdb               # Alle .pdb-bestanden (in alle mappen)
+*.ilk               # Incremental linker files
+*.aps               # Visual Studio resource project files
+*.nupkg             # NuGet package bestanden
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
