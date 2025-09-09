@@ -6,6 +6,8 @@ using Grocery.Core.Interfaces.Services;
 using Grocery.Core.Interfaces.Repositories;
 using Grocery.Core.Data.Repositories;
 
+// to do add comments to non custom files
+
 namespace Grocery.App
 {
     public static class MauiProgram
