@@ -2,34 +2,9 @@
 {
     public class GroceryListItem : Model
     {
-        public int ProductId { get; set; }// this has been checked before
-        public int GroceryListId { get
-        {
-            return Id;
-        } set
-        {
-            if (value < 0) {
-                throw new ArgumentOutOfRangeException("GroceryListId cannot be negative");
-            }
-            else
-            {
-                Id = value;
-            }
-        } }
-        public int Amount { get
-        {
-            return Id;
-        } set
-        {
-            if (value < 0) {
-                throw new ArgumentOutOfRangeException("Amount cannot be negative");
-            }
-            else
-            {
-                Id = value;
-            }
-        } }
-
+        public int GroceryListId { get; set; }
+        public int ProductId { get; set; }
+        public int Amount { get; set; }
 
         public GroceryListItem(int id, int groceryListId, int productId, int amount) : base(id, "")
         {

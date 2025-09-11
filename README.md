@@ -10,6 +10,8 @@ In het bestand `GroceryListItem.cs` uit het project Grocery.Core.Models:
 - De member variabelen wijzigen in properties
 - In de constructor de doorgegeven waarden koppelen aan de properties.
 
+is compleet
+
 **UC03 Tonen producten**  
 In het bestand `ProductRepository.cs` uit het project Grocery.Core.Data:
 - Initieer in de constructor de lijst met 4 nieuwe producten:  
