@@ -2,6 +2,7 @@
 {
     public class GroceryListItem : Model
     {
+        public int ProductId { get; set; }// this has been checked before
         public int GroceryListId { get
         {
             return Id;
@@ -15,7 +16,6 @@
                 Id = value;
             }
         } }
-        public int ProductId { get; set; }
         public int Amount { get
         {
             return Id;
