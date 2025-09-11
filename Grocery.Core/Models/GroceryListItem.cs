@@ -2,12 +2,40 @@
 {
     public class GroceryListItem : Model
     {
-        public int GroceryListId; //To do: change it to a property
-        public int ProductId;     //To do: change it to a property
-        public int Amount { get; set; }
+        public int GroceryListId { get
+        {
+            return Id;
+        } set
+        {
+            if (value < 0) {
+                throw new ArgumentOutOfRangeException("GroceryListId cannot be negative");
+            }
+            else
+            {
+                Id = value;
+            }
+        } }
+        public int ProductId { get; set; }
+        public int Amount { get
+        {
+            return Id;
+        } set
+        {
+            if (value < 0) {
+                throw new ArgumentOutOfRangeException("Amount cannot be negative");
+            }
+            else
+            {
+                Id = value;
+            }
+        } }
+
+
         public GroceryListItem(int id, int groceryListId, int productId, int amount) : base(id, "")
         {
-            //To do:assign values to the properties
+            GroceryListId = groceryListId;
+            ProductId = productId;
+            Amount = amount;
         }
 
         public Product Product { get; set; } = new(0, "None", 0);
